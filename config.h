@@ -125,8 +125,8 @@ static const Layout layouts[] = {
 
 static const MonitorRule monrules[] = {
 	/* monitor  tag  layout  mfact  nmaster  showbar  topbar */
-	{  0,       9,   2,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
-	{  0,       1,   0,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
+	{  0,       9,   2,      -1,    -1,      -1,      -1     },
+	{  0,       1,   0,      -1,    -1,      -1,      -1     },
 	{  1,       1,   0,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
 	{  -1,      -1,  0,      -1,    -1,      -1,      -1     }, // default
 };
@@ -236,7 +236,6 @@ static Key keys[] = {
 
 	{ KeyPress,   MODKEY|ShiftMask,   XK_BackSpace,            killunsel,      {0} },
 	{ KeyPress,   MODKEY,             XK_s,                    togglefloating, {0} },
-//  { KeyPress,   MODKEY,             XK_f,                    togglemaximize,      {0} },
 	{ KeyPress,   MODKEY,             XK_f,                    fullscreen,  {0} },
 	{ KeyPress,   Mod1Mask|ShiftMask,           XK_q,                    spawn,          ESHCMD("xkill") },
 	//{ KeyPress,   Mod1Mask|ShiftMask, XK_c,                    killclient,     {0} },
