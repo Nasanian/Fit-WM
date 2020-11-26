@@ -1,6 +1,6 @@
 ### Hey! Welcome to my fork of dwm! Where suffering comes to die!
 
-This is a *HEAVILY* modified version of dwm with a *TON* of patches!
+This is a *HEAVILY* modified version of dwm with a *TON* of patches! <br/>
 *With no crap included*
 
 Here's a list of the patches so far:
