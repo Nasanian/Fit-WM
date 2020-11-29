@@ -379,6 +379,8 @@ static void (*handler[LASTEvent]) (XEvent *) = {
 	[PropertyNotify] = propertynotify,
 	[UnmapNotify] = unmapnotify
 };
+
+Bool realfullscreen = 0;
 static Atom wmatom[WMLast], netatom[NetLast];
 static int epoll_fd;
 static int dpy_fd;
@@ -2378,9 +2380,9 @@ Layout *last_layout;
 void
 fullscreen(const Arg *arg)
 {
-  selmon->sel->isfullscreen = !selmon->sel->isfullscreen;
+  realfullscreen = !realfullscreen;
 
-	if (!selmon->sel->isfullscreen) {
+	if (realfullscreen) {
 		for(last_layout = (Layout *)layouts; last_layout != selmon->lt[selmon->sellt]; last_layout++);
 		setlayout(&((Arg) { .v = &layouts[2] }));
 	} else {
