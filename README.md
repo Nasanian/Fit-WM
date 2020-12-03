@@ -60,7 +60,8 @@ Dependencies:
   - libxinerama
   - yajl
   - make
-
+  - font-symbola (for void linux)
+  
 Please, go into config.h and check the keybindings, you might see something you like!
 
 After you have all of that, simply run ./makedwm.sh and it should compile to /usr/local/bin/dwm
