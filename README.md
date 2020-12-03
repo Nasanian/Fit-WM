@@ -37,6 +37,9 @@ dwm-warp-6.1<br/>
 Also, I have added in some of instantWM's animations since I thought they looked cool, there's a way to disable them if you look closely in the config.h. (i'll actually just add
 a button to toggle it in later releases)
 
+I've also made sure to make some changes to it in order to have it run better with games. (Tested my entire steam library) <br/>
+You also don't need to kill dwm anymore to make changes! *JUST RECOMPILE AND PRESS SHIFT + MOD(Alt by default) + R*
+
 I plan to add in vanity gaps in place of the current gaps and i'm soon to work on fixing the swallowing not working properly (for some odd reason...). Enjoy!
 
 ### HOW TO BUILD
@@ -52,10 +55,11 @@ Dependencies:
   - xorg
   - libxcb
   - gcc
-  - libx11-dev
-  - libxft-dev
+  - libx11-dev / libx11 (Could be different depending on distro) 
+  - libxft-dev / libxft (Could be different depending on distro)
   - libxinerama
   - yajl
+  - make
 
 Please, go into config.h and check the keybindings, you might see something you like!
 
