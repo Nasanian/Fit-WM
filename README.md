@@ -59,6 +59,7 @@ Dependencies:
   - libxft-dev
   - libxinerama
   - yajl
+  - make
 
 Please, go into config.h and check the keybindings, you might see something you like!
 
