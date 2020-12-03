@@ -55,8 +55,8 @@ Dependencies:
   - xorg
   - libxcb
   - gcc
-  - libx11-dev
-  - libxft-dev
+  - libx11-dev / libx11
+  - libxft-dev / libxft
   - libxinerama
   - yajl
   - make
