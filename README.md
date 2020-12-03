@@ -38,6 +38,7 @@ Also, I have added in some of instantWM's animations since I thought they looked
 a button to toggle it in later releases)
 
 I've also made sure to make some changes to it in order to have it run better with games. (Tested my entire steam library)
+*YOU ALSO DON'T NEED TO KILL DWM ANYMORE TO MAKE CHANGES! JUST PRESS SHIFT + MOD(Alt by default) + R*
 
 I plan to add in vanity gaps in place of the current gaps and i'm soon to work on fixing the swallowing not working properly (for some odd reason...). Enjoy!
 
