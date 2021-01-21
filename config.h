@@ -34,13 +34,13 @@ static const unsigned int gappoh    = 80;       /* horiz outer gap between windo
 static const unsigned int gappov    = 80;       /* vert outer gap between windows and screen edge */
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
-static const char *fonts[]          = { "tewi:size=10" };
-static const char dmenufont[]       =  "tewi:size=10";
+static const char *fonts[]          = { "tewi:size=11" };
+static const char dmenufont[]       =  "tewi:size=11";
 static const char normbordercolor[] = "#140417";
-static const char normbgcolor[]     = "#090408";
+static const char normbgcolor[]     = "#1A050E";
 static const char normfgcolor[]     = "#6b6b6b";
 static const char selbordercolor[]  = "#1A0E1C";
-static const char selbgcolor[]      = "#090408";
+static const char selbgcolor[]      = "#1A050E";
 static const char selfgcolor[]      = "#8ea5ac";
 static const char dmsbcolor[]       = "#5b6da6";
 static const char dmselcolor[]      = "#1A0E1C";
@@ -52,7 +52,8 @@ static const char *alttrayname      = "tray";    /* Polybar tray instance name *
 static const char *altbarcmd        = "~/.config/polybar/launch.sh"; /* Alternate bar launch command */
 static const char *startcmd         = "~/suckless/autostart/autorun"; /* Autostart your stuff */
 static const char *ipcsockpath = "/tmp/dwm.sock";
-
+static const unsigned int baralpha = 0xFF;
+static const unsigned int borderalpha = 0xFF;
 
 
 static const char *colors[][3]      = {
@@ -60,6 +61,17 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
 	[SchemeSel] =  { selfgcolor,  selbgcolor,  selbordercolor },
 };
+
+
+static const char *alphas[][3]      = {
+	/*               fg           bg           border   */
+	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+	[SchemeSel] =  { selfgcolor,  selbgcolor,  selbordercolor },
+};
+
+
+
+
 
 
 /*Scratch padding*/
@@ -188,7 +200,7 @@ static Key keys[] = {
 	{ KeyPress,   MODKEY|ShiftMask,   XK_Left,               pushstack,      {.i = -1 } },
 	{ KeyPress,   MODKEY|ShiftMask,   XK_Right,              pushstack,      {.i = +1 } },
 
-  { KeyPress,   MODKEY,             XK_d,                    spawn,          ESHCMD("dmenu_run -sb '#45303d' -nb '#09020b'  -fn 'tewi' -sf '#0d0d0d' -nf '#4f4f4f' -l 10 -b")},
+  { KeyPress,   MODKEY,             XK_d,                    spawn,          ESHCMD("dmenu_run -sb '#240014' -nb '#110309'  -fn 'tewi' -sf '#800354' -nf '#380125' -l 10 -b")},
 	{ KeyPress,   MODKEY,             XK_2,                    spawn,          {.v = passmenu } },
 	{ KeyPress,   MODKEY,             XK_3,                    spawn,          {.v = clipmenu } },
 	{ KeyPress,   MODKEY,             XK_Return,               spawn,          ESHCMD("st -e tmux") },
