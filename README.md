@@ -32,6 +32,7 @@ dwm-sticky-6.1<br/>
 dwm-swallow-20200707-8d1e703<br/>
 dwm-uselessgap-6.2<br/>
 dwm-warp-6.1<br/>
+dwm-alpha-20201019-61bb8b2.diff<br/>
 <br/>
 
 Also, I have added in some of instantWM's animations since I thought they looked cool, there's a way to disable them if you look closely in the config.h. (i'll actually just add
