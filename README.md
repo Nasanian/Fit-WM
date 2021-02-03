@@ -1,9 +1,6 @@
-### Hey! Welcome to my fork of dwm! Where suffering comes to die!
+### Heavily modified DWM fork with some of InstantWM's features added to it, as well as my own.
 
-This is a *HEAVILY* modified version of dwm with a *TON* of patches! <br/>
-*With no crap included*
-
-Here's a list of the patches so far:
+The list of the patches so far:
 
 dwm-6.0-singularborders<br/>
 dwm-6.0-singularborders_bstack<br/>
@@ -35,11 +32,10 @@ dwm-warp-6.1<br/>
 dwm-alpha-20201019-61bb8b2.diff<br/>
 <br/>
 
-Also, I have added in some of instantWM's animations since I thought they looked cool, there's a way to disable them if you look closely in the config.h. (i'll actually just add
-a button to toggle it in later releases)
+Also, I have added in some of instantWM's animations since I thought they looked cool, there's a way to disable them if you look closely in the config.h. (i'll actually just add a button to toggle it in later releases)
 
-I've also made sure to make some changes to it in order to have it run better with games. (Tested my entire steam library) <br/>
-You also don't need to kill dwm anymore to make changes! *JUST RECOMPILE AND PRESS SHIFT + MOD(Alt by default) + R*
+I've also made sure to make some changes to it in order to have it run better with games. (Tested my entire steam library, the games that work of course) <br/>
+You also don't need to kill dwm anymore to make changes! *JUST RECOMPILE AND PRESS SHIFT + MOD(Alt by default) + R* <br/>
 
 I plan to add in vanity gaps in place of the current gaps and i'm soon to work on fixing the swallowing not working properly (for some odd reason...). Enjoy!
 
