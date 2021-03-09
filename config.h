@@ -53,7 +53,7 @@ static const char *altbarcmd        = "~/.config/polybar/launch.sh"; /* Alternat
 static const char *startcmd         = "~/suckless/autostart/autorun"; /* Autostart your stuff */
 static const char *ipcsockpath = "/tmp/dwm.sock";
 static const unsigned int baralpha = 0xFF;
-static const unsigned int borderalpha = 0xFF;
+static const unsigned int borderalpha = OPAQUE;
 
 
 static const char *colors[][3]      = {
@@ -107,6 +107,8 @@ static const Rule rules[] = {
 	{ "Pavucontrol",   NULL,  NULL,        1 << 8,      0,           0,         0,        0,        1 },
 	{ "corectrl",      NULL,  NULL,        1 << 7,      0,           0,         0,        0,        1 },
 	{ "discord",       NULL,  NULL,        1,           0,           0,         0,        0,        1 },
+	{ "GLava",         NULL,  NULL,        1,           0,           0,         0,        0,        1 },
+	{ "element-nativefier-58fbf1",       NULL,  NULL,        1,           0,           0,         0,        0,        1 },
 	{ "Audacious",     NULL,  NULL,        1 << 1,      0,           0,         0,        0,        1 },
 	{ "qutebrowser",   NULL,  NULL,        0,          0,           0,         1,        0,       -1 },
 	{ "Thunar",        NULL,  NULL,        0,          0,          0,          1,        0,      -1 },
@@ -138,8 +140,9 @@ static const Layout layouts[] = {
 static const MonitorRule monrules[] = {
 	/* monitor  tag  layout  mfact  nmaster  showbar  topbar */
 	{  0,       9,   2,      -1,    -1,      -1,      -1     },
+	{  1,       9,   2,      -1,    -1,      -1,      -1     },
 	{  0,       1,   0,      -1,    -1,      -1,      -1     },
-	{  1,       1,   0,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
+	{  1,       1,   2,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
 	{  -1,      -1,  0,      -1,    -1,      -1,      -1     }, // default
 };
 
@@ -204,6 +207,8 @@ static Key keys[] = {
 	{ KeyPress,   MODKEY,             XK_2,                    spawn,          {.v = passmenu } },
 	{ KeyPress,   MODKEY,             XK_3,                    spawn,          {.v = clipmenu } },
 	{ KeyPress,   MODKEY,             XK_Return,               spawn,          ESHCMD("st -e tmux") },
+	{ KeyPress,   MODKEY|ShiftMask,   XK_z,  	                 spawn,          ESHCMD("~/.config/herbstluftwm/hoston.sh")},
+	{ KeyPress,   MODKEY|ShiftMask,   XK_x,  	                 spawn,          ESHCMD("~/.config/herbstluftwm/hostoff.sh")},
 	{ KeyPress,   MODKEY,            	XK_h,  	                 togglescratch,  {.ui = 0 } },
 	{ KeyPress,   MODKEY,             XK_n,                    prevlayout,      {0} },
 	{ KeyPress,   MODKEY,             XK_m,                    nextlayout,      {0} },
